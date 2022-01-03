@@ -81,3 +81,4 @@ root.bind("<Down>", downButton) and root.bind("-", downButton)
 root.bind("<space>", spaceButton)
 ```
 3 nieuwe functies en paar knoppen verbonden met het programma
+(Ik heb ook de functie up() naar kleine letters veranderd)
