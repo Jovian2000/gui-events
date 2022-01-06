@@ -83,7 +83,7 @@ root.bind("<space>", spaceButton)
 3 nieuwe functies en paar knoppen verbonden met het programma
 (Ik heb ook de functie up() naar kleine letters veranderd)
 ## F1.8.02.O2 - Simple FPS trainer v1
-Hierbij de fps trainer 
+Hierbij de Simple FPS trainer
 ``` python
 import tkinter as tk
 import sys
