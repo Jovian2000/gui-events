@@ -13,13 +13,12 @@ points = 0
 taskLists = ["w", "a", "s", "d", "space", "<Button>", "<Double-Button>", "<Triple-Button>"]
 
 def buttonTask():
-    global timer
     task = random.choice(taskLists)
     taskLabel = tk.Label(root, text = "Press: " + task, font =("Arial", 14))
     taskLabel.pack()
     taskLabel.place(x=random.randint(0,385), y=random.randint(75,450))
     def keyTask(event):
-        global points, timer
+        global points
         taskLabel.destroy()
         points += pointValue        
         labelPoints.configure(text = (str(points) + " points"))
@@ -48,8 +47,7 @@ def start():
     else:
         YesOrNo()
 
-def YesOrNo():
-    global timer, points 
+def YesOrNo(): 
     answer = askyesno(
         title = "Again",
         message = "Congratulations, you have " + str(points) + " points, wanna play again?")
