@@ -109,7 +109,8 @@ def buttonTask():
         taskLabel.destroy()
         points += pointValue        
         labelPoints.configure(text = (str(points) + " points"))
-        root.unbind(task)
+        if task == "a" or task == "w" or task == "s" or task == "d" or task == "space":
+            root.unbind("<"+task+">")
         root.after(500, buttonTask)
     if task == "<Button>" or task == "<Double-Button>" or task == "<Triple-Button>":
         pointValue = 2
